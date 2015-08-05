@@ -1,5 +1,5 @@
 //
-//  inputHandler.h
+//  InputHandler.h
 //  wordEffects
 //
 //  Created by Navaneethan Sivabalaviknarajah on 2015-08-04.
@@ -8,6 +8,10 @@
 
 #import <Foundation/Foundation.h>
 
-@interface inputHandler : NSObject
+@interface InputHandler : NSObject
+
+@property (nonatomic, strong) NSDictionary *inputDictionary;
+
+-(NSMutableDictionary *)handleInput;
 
 @end
